@@ -29,7 +29,7 @@ export const TeacherSingleLessonList = () => {
           >
             {lesson.title}
           </Typography>
-          <Typography gutterBottom>{lesson.body}</Typography>
+          <Typography gutterBottom  paragraph sx={{whiteSpace: "pre-line"}}>{lesson.body}</Typography>
           <Typography>
             Created at: {moment(lesson.created_at).format("LL")}
           </Typography>
